@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI">
+  <grid id="27dc6" binding="PainelGUI" layout-manager="GridLayoutManager" row-count="14" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="30" vgap="30">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="594" height="578"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="24369" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="1" row-span="3" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Cachorro Grande:"/>
+        </properties>
+      </component>
+      <component id="935af" class="javax.swing.JLabel" binding="resultado">
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <verticalTextPosition value="1"/>
+        </properties>
+      </component>
+      <hspacer id="e084b">
+        <constraints>
+          <grid row="1" column="0" row-span="12" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="20" height="20"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="c03e3">
+        <constraints>
+          <grid row="1" column="3" row-span="12" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="20" height="20"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <vspacer id="3aeda">
+        <constraints>
+          <grid row="13" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <maximum-size width="20" height="20"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="22c37" class="javax.swing.JButton" binding="procurarPetShopButton" default-binding="true">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="150" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Procurar PetShop"/>
+        </properties>
+      </component>
+      <component id="8e29a" class="javax.swing.JSpinner" binding="spinnerCachorroP">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <maximum-size width="130" height="100"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <clientProperties>
+          <html.disable class="java.lang.Boolean" value="true"/>
+        </clientProperties>
+      </component>
+      <component id="2b216" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Cachorro Pequeno:"/>
+        </properties>
+      </component>
+      <vspacer id="7f5e6">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="8579b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Data:"/>
+        </properties>
+      </component>
+      <component id="9e585" class="javax.swing.JSpinner" binding="spinnerCachorroG">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <maximum-size width="130" height="100"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <clientProperties>
+          <html.disable class="java.lang.Boolean" value="true"/>
+        </clientProperties>
+      </component>
+      <component id="bfcae" class="javax.swing.JTextField" binding="dataTextField">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="dd/MM/aaaa"/>
+        </properties>
+        <clientProperties>
+          <html.disable class="java.lang.Boolean" value="true"/>
+        </clientProperties>
+      </component>
+      <component id="ccf10" class="javax.swing.JLabel" binding="ErrorLabel">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="8fef0" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+    </children>
+  </grid>
+</form>

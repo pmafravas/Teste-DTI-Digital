@@ -1,38 +1,35 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ComponentAdapter;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-public class Main {
+public class Main{
+    public static Lojas resultado = new Lojas(null, 0,0); //Inicialização de variável que será utilizado para exibição do resultado
+    public static Lojas MeuCanino = new Lojas("Meu Canino Feliz", 20, 40, 20);
+    public static Lojas VaiRex = new Lojas("Vai Rex", 15, 50, 20, 55);
+    public static Lojas ChowChawgas = new Lojas("Chow Chawgas", 30, 45);
+
     public static void main(String[] args) {
-        Lojas MeuCanino = new Lojas("Meu Canino Feliz", 20, 40, 20);
-        Lojas VaiRex = new Lojas("Vai Rex", 15, 50, 20, 55);
-        Lojas ChowChawgas = new Lojas("Chow Chawgas", 30, 45);
-        Lojas resultado = new Lojas(null, 0,0); //Inicialização de variável que será utilizado para exibição do resultado
-
-
-        Scanner scanner = new Scanner(System.in);
-        DateTimeFormatter formatador = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-
-        //Inputs manuais - teste de backend (apenas temporário, será removido assim que o frontend for implementado)
-        System.out.print("Insira a data desejada no formato YYYY-MM-DD: ");
-        String data = scanner.nextLine();
-
-        //Transformando data para dia da semana
-        LocalDate dataMarcada = LocalDate.parse(data, formatador);
-        DayOfWeek diaSemana = dataMarcada.getDayOfWeek();
-
-        System.out.print("Digite quantos cachorros pequenos serão levados: ");
-        int cachorrosP = scanner.nextInt();
-
-        System.out.print("Digite quantos cachorros grandes serão levados: ");
-        int cachorrosG = scanner.nextInt();
-
-        resultado = calculaValor(diaSemana, cachorrosP, cachorrosG, MeuCanino, VaiRex, ChowChawgas, resultado);
-        System.out.println("Resultado: " + resultado.nome);
-
+        new GUI();
     }
 
+    /**
+     * Método para realizar calculo de quantos reais será gasto em cada PetShop definido, retornando o petshop mais barato, ou mais próximo em caso de empate de preço.
+     *
+     * @param diaSemana - Data definida por usuário
+     * @param cachorrosP - Quantidade de cachorros pequenos
+     * @param cachorrosG - Quantidade de cachorros grandes
+     * @param MeuCanino - Variável do PetShop
+     * @param VaiRex - Variável do PetShop
+     * @param ChowChawgas - Variável do PetShop
+     * @param resultado - Variável que carregará o petshop escolhido
+     * @return - Petshop com menor gasto ou menor distância
+     */
     public static Lojas calculaValor(DayOfWeek diaSemana, int cachorrosP, int cachorrosG, Lojas MeuCanino, Lojas VaiRex, Lojas ChowChawgas, Lojas resultado){
         double valorMeuCanino;
         double valorVaiRex;
@@ -79,4 +76,5 @@ public class Main {
 
         return resultado;
     }
+
 }
