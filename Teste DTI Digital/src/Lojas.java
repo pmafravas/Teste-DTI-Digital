@@ -1,13 +1,11 @@
 /**
  * Classe Lojas - classe utilizada para as criações dos petshops
- *
  */
 public class Lojas {
 
     String nome;
     int precoP; //Preço para cachorros pequenos
     int precoG; //Preço oara cachorros grandes
-    boolean precoAlternativo;
     double precoPA; //PrecoP Alternativo
     double precoGA; //PrecoG Alternativo
 
@@ -20,9 +18,10 @@ public class Lojas {
      */
     Lojas(String nome, int precoP, int precoG){
         this.nome = nome;
+
+        //Definindo preço padrão
         this.precoP = precoP;
         this.precoG = precoG;
-        this.precoAlternativo = false; //Definindo o preço do petshop como um preço fixo
     }
 
     /**
@@ -36,9 +35,12 @@ public class Lojas {
      */
     Lojas(String nome, int precoP, int precoG, float precoPA, float precoGA){
         this.nome = nome;
+
+        //Definindo preço padrão
         this.precoP = precoP;
         this.precoG = precoG;
-        this.precoAlternativo = true; //Definindo o preço do petshop como um preço fixo
+
+        //Definindo preço alternativo
         this.precoPA = precoPA;
         this.precoGA = precoGA;
     }
@@ -55,8 +57,8 @@ public class Lojas {
         this.nome = nome;
         this.precoP = precoP;
         this.precoG = precoG;
-        this.precoAlternativo = true; //Definindo o preço do petshop como um preço fixo
 
+        //REalizando calculo de aumento de preço
         double incremento = (aumento/100) + 1; //Transfomando o valor de int em um número que representa seu aumento para calculo do valor final
         this.precoPA = precoP * incremento;
         this.precoGA = precoG * incremento;
