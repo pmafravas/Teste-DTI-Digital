@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Teste-DTI-Digital:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Teste_DTI_Digital_jar</output-path>
+    <root id="archive" name="Teste-DTI-Digital.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/Executables/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Teste-DTI-Digital" />
+    </root>
+  </artifact>
+</component>
